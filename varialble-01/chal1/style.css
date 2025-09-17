@@ -1,0 +1,60 @@
+/* Style général */
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f6fc;
+  text-align: center;
+  margin: 0;
+  padding: 40px;
+}
+
+/* Labels */
+label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  display: inline-block;
+  margin: 10px 0 5px 0;
+}
+
+/* Inputs */
+input {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #0077cc;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 200px;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #005fa3;
+  outline: none;
+  box-shadow: 0 0 5px #0077cc;
+}
+
+/* Bouton */
+button {
+  padding: 12px 25px;
+  background: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 15px;
+}
+
+button:hover {
+  background: #005fa3;
+  transform: scale(1.05);
+}
+
+/* Résultat */
+#afficherr {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #222;
+}
