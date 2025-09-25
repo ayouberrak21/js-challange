@@ -1,0 +1,145 @@
+/* ===== Style global ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+    margin: 0;
+    padding: 0 20px 40px;
+    color: #333;
+}
+
+/* ===== Titre principal ===== */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 30px 0;
+    color: #1e3a8a;
+}
+
+/* ===== Liens de navigation ===== */
+a {
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 10px 18px;
+    text-decoration: none;
+    background-color: #3b82f6;
+    color: white;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+a:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+}
+
+/* ===== Conteneur des sections ===== */
+#container {
+    margin-top: 30px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===== Chaque section ===== */
+#container > div {
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    margin-bottom: 25px;
+    display: none; /* caché par défaut */
+    transition: all 0.4s ease;
+}
+
+/* ===== Titres des sections ===== */
+#container h2 {
+    margin-bottom: 20px;
+    color: #1e40af;
+    font-size: 1.6rem;
+}
+
+/* ===== Inputs ===== */
+input[type="text"],
+input[type="number"] {
+    padding: 12px 15px;
+    margin: 5px 0;
+    width: calc(100% - 30px);
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 8px rgba(59,130,246,0.3);
+}
+
+/* ===== Boutons ===== */
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #10b981;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(16,185,129,0.3);
+}
+
+button:hover {
+    background-color: #059669;
+    transform: translateY(-2px);
+}
+
+/* ===== Messages ===== */
+p, #livreAfficher, #resultatRecherche, #messageModifier, #messageSupprimer, #totalLivres {
+    margin-top: 15px;
+    font-weight: 500;
+    color: #111827;
+}
+
+/* ===== Tableau ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 0.95rem;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background-color: #3b82f6;
+    color: white;
+    text-transform: uppercase;
+}
+tr:hover {
+    background-color: #f1f5f9;
+}
+/* ===== Messages de succès et d'erreur ===== */
+#messageAjout, #messageModifier, #messageSupprimer {
+    margin-top: 15px;
+    font-weight: 500;
+    color: #111827;
+}
+#messageAjout {
+    color: #10b981; 
+}
+#messageModifier {
+    color: #f59e0b; 
+}
+#messageSupprimer {
+    color: #ef4444; 
+}
+

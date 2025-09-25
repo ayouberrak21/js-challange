@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gerer le stock de livres dans une librairie</h1>
+    <a href="#section1" onclick="afficherSection('section1')">Ajouter un livre</a>
+    <a href="#section2" onclick="afficherSection('section2')">Afficher tous les livres disponibles.</a>
+    <a href="#section3" onclick="afficherSection('section3')">Rechercher un livre par son titre.</a>
+    <a href="#section4" onclick="afficherSection('section4')">Mettre à jour la quantité d'un livre.</a>
+    <a href="#section5" onclick="afficherSection('section5')">Supprimer un livre.</a>
+    <a href="#section6" onclick="afficherSection('section6')">Le nombre total de livres.</a>
+
+    <div id="container">
+        <div id="section1">
+            <h2>ajouter un livre</h2>
+            <input type="text" id="titre" placeholder="Titre du livre">
+            <input type="text" id="auteur" placeholder="Auteur du livre">
+            <input type="text" id="prix" placeholder="prix de livre ">
+            <input type="number" id="quantite" placeholder="Quantité">
+            <button id="ajouterLivres" onclick="ajouterLivre()">Ajouter le livre</button>
+            <p id="messageAjout"></p>
+        </div>
+        <div id="section2">
+            <h2>Afficher tous les livres disponibles</h2>
+            <button id="afficherLivres" onclick="afficherLivres()">Afficher les livres</button>
+            <div id="livreAfficher"></div>
+        </div>
+        <div id="section3">
+            <h2>Rechercher un livre par son titre</h2>
+            <input type="text" id="rechercheTitre" placeholder="Titre du livre">
+            <button id="rechercherLivre" onclick="rechercherLivre()">Rechercher</button>
+            <div id="resultatRecherche"></div>
+        </div>
+        <div id="section4">
+            <h2>Mettre à jour la quantité d'un livre</h2>
+            <input type="text" id="titreModif" placeholder="Titre du livre">
+            <input type="number" id="nouvelleQuantite" placeholder="Nouvelle quantité">
+            <button id="mettreAJourQuantite" onclick="mettreAJourQuantite()">Mettre à jour</button>
+            <div id="messageModifier"></div>
+        </div>
+        <div id="section5">
+            <h2>Supprimer un livre</h2>
+            <input type="text" id="titreSupprimer" placeholder="Titre du livre">
+            <button id="supprimerLivre" onclick="supprimerLivre()">Supprimer</button>
+            <div id="messageSupprimer"></div>
+        </div>
+        <div id="section6">
+            <h2>Le nombre total de livres</h2>
+            <button id="nombreTotalLivres" onclick="nombreTotalLivres()">Afficher le nombre total de livres</button>
+            <div id="totalLivres"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
